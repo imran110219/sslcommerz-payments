@@ -50,7 +50,7 @@ public class SSLCommerzService {
     public Mono<ValidationResponse> validateTransaction(String tranId) {
         String url = String.format("%s?val_id=%s&store_id=%s&store_passwd=%s&format=json",
                 sslCommerzProperties.getApi().getValidateTransactionPath(), tranId,
-                sslComSSLCommerzmerzProperties.getStoreId(), sslCommerzProperties.getStorePassword());
+                sslCommerzProperties.getStoreId(), sslCommerzProperties.getStorePassword());
 
         logger.info("Validating transaction with ID: {}", tranId);
 
